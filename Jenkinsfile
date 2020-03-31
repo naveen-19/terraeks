@@ -51,7 +51,7 @@ pipeline {
             steps {
 	      //sh 'sudo rm -rf /home/ec2-user/cred && sudo cd /root && sudo cd ../ && sudo cp ~/.aws/credentials /home/ec2-user/cred'
 	      //sh 'sudo rm -rf terraform-script-eks /home/ec2-user/terra'
-	      sh 'sudo rm -rf *;git clone https://github.com/naveen-19/samreen-terra.git'
+	      sh 'sudo rm -rf *;git clone https://github.com/naveen-19/terraform-script-eks.git'
 	      sh 'sudo cp -r /var/lib/jenkins/workspace/eks/terraform-script-eks/* /home/ec2-user/new'
 	      
 	     // sh 'sudo cp * /home/ec2-user/new'
